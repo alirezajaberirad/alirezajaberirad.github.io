@@ -7,7 +7,13 @@ redirect_from:
   - /about.html
 ---
 
-I am an M.Sc. student in Computer Engineering at the University of Massachusetts Amherst (expected Aug 2026), with a focus on AI hardware acceleration. I received a dual B.Sc. in Electrical Engineering and Computer Science from the University of Tehran.
+I am Alireza Jaberi Rad, a graduate researcher at the University of Massachusetts Amherst, where I develop emerging hardware solutions to accelerate artificial intelligence systems. By bridging deep insights into machine learning algorithms and their underlying mathematics, I design highly efficient hardware architectures capable of executing computationally intensive tasks.
+
+In the Nanodevices and Integrated Systems Laboratory, my work spans three directions. I began by designing a retina-inspired computing device that processes two-dimensional inputs simultaneously, performing matrix multiplication and convolution — the core operations of most machine learning algorithms — in a single, highly efficient step. I then designed a novel hyperdimensional computing algorithm optimized for emerging hardware platforms, validating it on a language classification task. This work deepened my understanding across Natural Language Processing, image processing, DNA sequencing, and gene expression classification, enabling me to identify which application domains are best suited to our computing paradigm. Through collaborative projects, I also moved into event-driven applications and spiking neural networks, implementing the HOTS (Hierarchy of Time Surfaces) algorithm on an in-memory computing system-on-a-chip developed by TetraMem.
+
+Prior to graduate school, I earned a dual degree in Computer Science and Electrical Engineering at the University of Tehran, specializing in Artificial Intelligence and Digital Logic Design. The intersection of these disciplines shaped my passion for problems that demand deep understanding of both software and hardware. Inspired by a conversation with the late Professor Abbas Nowzari Dalini, I focused my undergraduate thesis on hardware accelerators for neural networks — work that won the Best Undergraduate Project Award at the University of Tehran.
+
+I graduated in the top 10% of both my CS and EE cohorts and received Exceptional Talent M.Sc. admission offers from the University of Tehran and Sharif University of Technology. Driven by a desire to maximize the impact of my research, I chose to pursue graduate studies in the United States to engage with the world's leading research institutions and technology companies.
 
 <h2 style="margin-bottom: 0.3em;">Publications</h2>
 {% include base_path %}
