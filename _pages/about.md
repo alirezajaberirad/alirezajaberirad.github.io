@@ -24,7 +24,7 @@ I am an M.Sc. student in Computer Engineering at the University of Massachusetts
 <ul style="margin-top: 0; padding-left: 1.3em; line-height: 1.4;">
       {% for post in site.publications reversed %}
         {% if post.category != category[0] %}{% continue %}{% endif %}
-<li style="margin-bottom: 0.35em;">{{ post.authors }}. {% if post.paperurl %}<a href="{{ post.paperurl }}">{{ post.title }}</a>{% else %}{{ post.title }}{% endif %}. <em>{{ post.venue }}</em> ({{ post.date | date: "%Y" }}).</li>
+<li style="margin-bottom: 0.35em;">{{ post.authors }}. {% if post.paperurl %}<a href="{{ post.paperurl }}">{{ post.title }}</a>{% else %}{{ post.title }}{% endif %}. <em>{{ post.venue }}</em>{% if post.year %} ({{ post.year }}){% endif %}.</li>
       {% endfor %}
 </ul>
     {% endif %}
