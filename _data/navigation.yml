@@ -1,7 +1,4 @@
 main:
-  - title: "Publications"
-    url: /publications/
-
   - title: "Teaching & Service"
     url: /teaching/
 
