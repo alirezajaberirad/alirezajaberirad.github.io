@@ -26,8 +26,8 @@ author:
   name             : "Alireza Jaberi Rad"
   pronouns         : # example: "she/her"
   bio              : "Graduate Student at UMass Amherst"
-  location         : "Amherst, MA"
-  employer         : "UMass Amherst"
+  location         :
+  employer         :
   uri              : # URL
   email            : "ajaberirad@umass.edu"
 
