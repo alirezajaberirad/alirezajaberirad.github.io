@@ -15,7 +15,13 @@ Prior to graduate school, I earned a dual degree in Computer Science and Electri
 
 I graduated in the top 10% of both my CS and EE cohorts and received **Exceptional Talent** M.Sc. admission offers from the University of Tehran and Sharif University of Technology. Driven by a desire to maximize the impact of my research, I chose to pursue graduate studies in the United States to engage with the world's leading research institutions and technology companies.
 
-<h2 style="margin-bottom: 0.3em;">Publications</h2>
+<div style="display: flex; gap: 1.2em; margin-bottom: 1em; border-bottom: 1px solid #ddd; padding-bottom: 0.4em;">
+  <a href="#publications" style="text-decoration: none; color: inherit; font-weight: 600; font-size: 0.95em;">Publications</a>
+  <a href="#presentations" style="text-decoration: none; color: inherit; font-weight: 600; font-size: 0.95em;">Presentations</a>
+  <a href="#service" style="text-decoration: none; color: inherit; font-weight: 600; font-size: 0.95em;">Service</a>
+</div>
+
+<h2 id="publications" style="margin-bottom: 0.3em;">Publications</h2>
 {% include base_path %}
 {% if site.publication_category %}{% for category in site.publication_category %}{% assign has_posts = false %}{% for post in site.publications %}{% if post.category == category[0] %}{% assign has_posts = true %}{% endif %}{% endfor %}{% if has_posts %}
 <h3 style="margin-top: 0.6em; margin-bottom: 0.2em;">{{ category[1].title }}</h3>
@@ -24,7 +30,7 @@ I graduated in the top 10% of both my CS and EE cohorts and received **Exception
 </ul>{% endif %}{% endfor %}{% endif %}
 <p style="font-size: 0.85em; margin-top: 0.3em; color: #666;">* Co-first author</p>
 
-<h2 style="margin-bottom: 0.3em;">Presentations</h2>
+<h2 id="presentations" style="margin-bottom: 0.3em;">Presentations</h2>
 <ul style="margin-top: 0; padding-left: 1.3em; line-height: 1.4; font-size: 1em;">
   <li style="margin-bottom: 0.35em;">Talk, <em>UMass Graduate Research Symposium</em>, UMass Amherst, 2026. &ldquo;Seeing Like the Eye, Thinking Like the Brain for Faster and Greener AI.&rdquo;</li>
   <li style="margin-bottom: 0.35em;">Poster, <em>ECE Graduate Research Poster Session</em>, UMass Amherst, 2025. &ldquo;Hardware–Algorithm Co-Design for Hyperdimensional Computing Based on Memristive System-on-Chip.&rdquo;</li>
@@ -32,7 +38,7 @@ I graduated in the top 10% of both my CS and EE cohorts and received **Exception
   <li style="margin-bottom: 0.35em;">Poster, <em>MLNCP Workshop @ NeurIPS</em>, Vancouver, 2024. &ldquo;Hardware–Algorithm Co-Design for Hyperdimensional Computing Based on Memristive System-on-Chip.&rdquo;</li>
 </ul>
 
-<h2 style="margin-bottom: 0.3em;">Service</h2>
+<h2 id="service" style="margin-bottom: 0.3em;">Service</h2>
 <ul style="margin-top: 0; padding-left: 1.3em; line-height: 1.4;">
   <li style="margin-bottom: 0.35em;">Reviewed 3 manuscripts for <em>IEEE Transactions on Electron Devices</em>.</li>
   <li style="margin-bottom: 0.35em;">Reviewed 2 manuscripts for <em>IEEE International Symposium on Circuits and Systems (ISCAS) 2026</em>.</li>
