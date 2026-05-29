@@ -200,6 +200,10 @@
     color: var(--global-text-color);
     cursor: pointer;
     z-index: 100;
+
+    @media screen and (min-width: $sidebar-screen-min-width) {
+      display: none;
+    }
   }
 
   .visible-links {
