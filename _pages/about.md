@@ -26,9 +26,9 @@ I graduated in the top 10% of both my CS and EE cohorts and received **Exception
 
 <h2 style="margin-bottom: 0.3em;">Presentations</h2>
 <ul style="margin-top: 0; padding-left: 1.3em; line-height: 1.4; font-size: 1em;">
-  <li style="margin-bottom: 0.35em;">Lightning Talk, <em>UMass Graduate Research Symposium</em>, UMass Amherst, 2026. &ldquo;Seeing Like the Eye, Thinking Like the Brain for Faster and Greener AI.&rdquo;</li>
+  <li style="margin-bottom: 0.35em;">Talk, <em>UMass Graduate Research Symposium</em>, UMass Amherst, 2026. &ldquo;Seeing Like the Eye, Thinking Like the Brain for Faster and Greener AI.&rdquo;</li>
   <li style="margin-bottom: 0.35em;">Poster, <em>ECE Graduate Research Poster Session</em>, UMass Amherst, 2025. &ldquo;Hardware–Algorithm Co-Design for Hyperdimensional Computing Based on Memristive System-on-Chip.&rdquo;</li>
-  <li style="margin-bottom: 0.35em;">Oral, <em>ECE 3-Minute Thesis Competition</em>, UMass Amherst, 2025. &ldquo;A New Era of AI: Efficient Software + Brain-Inspired Hardware.&rdquo;</li>
+  <li style="margin-bottom: 0.35em;">Talk, <em>ECE 3-Minute Thesis Competition</em>, UMass Amherst, 2025. &ldquo;A New Era of AI: Efficient Software + Brain-Inspired Hardware.&rdquo;</li>
   <li style="margin-bottom: 0.35em;">Poster, <em>MLNCP Workshop @ NeurIPS</em>, Vancouver, 2024. &ldquo;Hardware–Algorithm Co-Design for Hyperdimensional Computing Based on Memristive System-on-Chip.&rdquo;</li>
 </ul>
 
