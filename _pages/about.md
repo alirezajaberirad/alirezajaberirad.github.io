@@ -30,3 +30,10 @@ I am an M.Sc. student in Computer Engineering at the University of Massachusetts
     {% endif %}
   {% endfor %}
 {% endif %}
+
+## Service
+
+<ul style="margin-top: 0; padding-left: 1.3em; line-height: 1.4;">
+  <li style="margin-bottom: 0.35em;">Reviewed 3 manuscripts for <em>IEEE Transactions on Electron Devices</em>.</li>
+  <li style="margin-bottom: 0.35em;">Reviewed 2 manuscripts for <em>IEEE International Symposium on Circuits and Systems (ISCAS) 2026</em>.</li>
+</ul>
