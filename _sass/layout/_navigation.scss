@@ -206,6 +206,12 @@
     }
   }
 
+  @media screen and (max-width: #{$sidebar-screen-min-width - 1px}) {
+    .visible-links li:not(:first-child) {
+      display: none;
+    }
+  }
+
   .visible-links {
     display: table;
 
