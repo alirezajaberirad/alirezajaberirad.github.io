@@ -5,7 +5,7 @@
 #main {
   @include container;
   @include clearfix;
-  margin-top: 0.5em;
+  margin-top: 10px;
 
   @include breakpoint($large) {
     margin-top: 2em;

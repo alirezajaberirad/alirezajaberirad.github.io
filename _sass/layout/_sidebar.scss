@@ -19,6 +19,7 @@
 
   @media screen and (max-width: #{$sidebar-screen-min-width - 1px}) {
     padding-top: 10px !important;
+    margin-bottom: 0;
   }
 
   @media screen and (min-width: $sidebar-screen-min-width) {
