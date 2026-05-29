@@ -208,7 +208,10 @@
 
   @media screen and (max-width: #{$sidebar-screen-min-width - 1px}) {
     .visible-links li:not(:first-child) {
-      display: none;
+      width: 0;
+      overflow: hidden;
+      padding: 0;
+      margin: 0;
     }
   }
 
