@@ -37,3 +37,5 @@ I graduated in the top 10% of both my CS and EE cohorts and received **Exception
   <li style="margin-bottom: 0.35em;">Reviewed 3 manuscripts for <em>IEEE Transactions on Electron Devices</em>.</li>
   <li style="margin-bottom: 0.35em;">Reviewed 2 manuscripts for <em>IEEE International Symposium on Circuits and Systems (ISCAS) 2026</em>.</li>
 </ul>
+
+<p style="margin-top: 1.5em;"><a href="/files/Alireza_Jaberi_Rad_CV.pdf" style="font-weight: 600;">Full CV →</a></p>
