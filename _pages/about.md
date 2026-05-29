@@ -16,6 +16,7 @@ I am an M.Sc. student in Computer Engineering at the University of Massachusetts
 <ul style="margin-top: 0; padding-left: 1.3em; line-height: 1.4;">{% for post in site.publications reversed %}{% if post.category != category[0] %}{% continue %}{% endif %}
 <li style="margin-bottom: 0.35em;">{{ post.authors }}. {% if post.paperurl %}<a href="{{ post.paperurl }}">{{ post.title }}</a>{% else %}{{ post.title }}{% endif %}. <em>{{ post.venue }}</em>{% if post.year %} ({{ post.year }}){% endif %}.{% if post.arxivurl %} <a href="{{ post.arxivurl }}" style="font-size: 0.85em;">[arXiv]</a>{% endif %}</li>{% endfor %}
 </ul>{% endif %}{% endfor %}{% endif %}
+<p style="font-size: 0.85em; margin-top: 0.3em; color: #666;">* Co-first author</p>
 
 <h2 style="margin-bottom: 0.3em;">Service</h2>
 <ul style="margin-top: 0; padding-left: 1.3em; line-height: 1.4;">
