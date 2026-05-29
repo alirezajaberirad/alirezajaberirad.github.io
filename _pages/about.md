@@ -26,12 +26,25 @@ I graduated in the top 10% of both my CS and EE cohorts and received **Exception
 </ul>{% endif %}{% endfor %}{% endif %}
 <p style="font-size: 0.85em; margin-top: 0.3em; color: #666;">* Co-first author</p>
 
+<style>
+.lightbox { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.85); z-index: 9999; justify-content: center; align-items: center; cursor: zoom-out; }
+.lightbox:target { display: flex; }
+.lightbox img { max-width: 90%; max-height: 90vh; object-fit: contain; border-radius: 4px; cursor: default; }
+.pres-link { color: inherit; text-decoration: none; border-bottom: 1px dotted currentColor; cursor: zoom-in; }
+.pres-link:hover { color: inherit; border-bottom: 1px solid currentColor; }
+</style>
+
+<div id="lb-2026-talk" class="lightbox"><a href="#presentations"><img src="/images/2026_UMass_Symposium_Lightning_Talk_0.PNG" alt="2026 UMass Symposium Lightning Talk"></a></div>
+<div id="lb-2025-poster" class="lightbox"><a href="#presentations"><img src="/images/2025_Graduate_Research_Poster_Session.jpg" alt="2025 ECE Poster Session"></a></div>
+<div id="lb-2025-talk" class="lightbox"><a href="#presentations"><img src="/images/2025_Graduate_Researh_3Minute_Thesis_Talk.PNG" alt="2025 3-Minute Thesis Talk"></a></div>
+<div id="lb-2024-neurips" class="lightbox"><a href="#presentations"><img src="/images/2024_NeurIPS_Poster.jpg" alt="2024 NeurIPS Poster"></a></div>
+
 <h2 id="presentations" style="margin-bottom: 0.3em;">Presentations</h2>
 <ul style="margin-top: 0; padding-left: 1.3em; line-height: 1.4; font-size: 1em;">
-  <li style="margin-bottom: 0.35em;">Talk, <em>UMass Graduate Research Symposium</em>, UMass Amherst, 2026. &ldquo;Seeing Like the Eye, Thinking Like the Brain for Faster and Greener AI.&rdquo;</li>
-  <li style="margin-bottom: 0.35em;">Poster, <em>ECE Graduate Research Poster Session</em>, UMass Amherst, 2025. &ldquo;Hardware–Algorithm Co-Design for Hyperdimensional Computing Based on Memristive System-on-Chip.&rdquo;</li>
-  <li style="margin-bottom: 0.35em;">Talk, <em>ECE 3-Minute Thesis Competition</em>, UMass Amherst, 2025. &ldquo;A New Era of AI: Efficient Software + Brain-Inspired Hardware.&rdquo;</li>
-  <li style="margin-bottom: 0.35em;">Poster, <em>MLNCP Workshop @ NeurIPS</em>, Vancouver, 2024. &ldquo;Hardware–Algorithm Co-Design for Hyperdimensional Computing Based on Memristive System-on-Chip.&rdquo;</li>
+  <li style="margin-bottom: 0.35em;">Talk, <em>UMass Graduate Research Symposium</em>, UMass Amherst, 2026. <a href="#lb-2026-talk" class="pres-link">&ldquo;Seeing Like the Eye, Thinking Like the Brain for Faster and Greener AI.&rdquo;</a></li>
+  <li style="margin-bottom: 0.35em;">Poster, <em>ECE Graduate Research Poster Session</em>, UMass Amherst, 2025. <a href="#lb-2025-poster" class="pres-link">&ldquo;Hardware–Algorithm Co-Design for Hyperdimensional Computing Based on Memristive System-on-Chip.&rdquo;</a></li>
+  <li style="margin-bottom: 0.35em;">Talk, <em>ECE 3-Minute Thesis Competition</em>, UMass Amherst, 2025. <a href="#lb-2025-talk" class="pres-link">&ldquo;A New Era of AI: Efficient Software + Brain-Inspired Hardware.&rdquo;</a></li>
+  <li style="margin-bottom: 0.35em;">Poster, <em>MLNCP Workshop @ NeurIPS</em>, Vancouver, 2024. <a href="#lb-2024-neurips" class="pres-link">&ldquo;Hardware–Algorithm Co-Design for Hyperdimensional Computing Based on Memristive System-on-Chip.&rdquo;</a></li>
 </ul>
 
 <h2 id="service" style="margin-bottom: 0.3em;">Service</h2>
