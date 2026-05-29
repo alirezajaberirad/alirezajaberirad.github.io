@@ -29,6 +29,10 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.2;
   font-family: $header-font-family;
   font-weight: bold;
+
+  @media screen and (max-width: #{$sidebar-screen-min-width - 1px}) {
+    margin-top: 10px;
+  }
 }
 
 h1 {
