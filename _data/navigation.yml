@@ -1,3 +1,12 @@
 main:
+  - title: "Publications"
+    url: /#publications
+
+  - title: "Presentations"
+    url: /#presentations
+
+  - title: "Service"
+    url: /#service
+
   - title: "CV"
     url: /files/Alireza_Jaberi_Rad_CV.pdf
