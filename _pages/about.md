@@ -30,8 +30,8 @@ I graduated in the top 10% of both my CS and EE cohorts and received **Exception
 .lightbox { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.85); z-index: 9999; justify-content: center; align-items: center; cursor: zoom-out; }
 .lightbox:target { display: flex; }
 .lightbox img { max-width: 90%; max-height: 90vh; object-fit: contain; border-radius: 4px; cursor: default; }
-.pres-link { color: inherit; text-decoration: none; border-bottom: 1px dotted currentColor; cursor: zoom-in; }
-.pres-link:hover { color: inherit; border-bottom: 1px solid currentColor; }
+.pres-link { color: inherit; text-decoration: none; cursor: zoom-in; }
+.pres-link:hover { color: inherit; }
 </style>
 
 <div id="lb-2026-talk" class="lightbox"><a href="#presentations"><img src="/images/2026_UMass_Symposium_Lightning_Talk_0.PNG" alt="2026 UMass Symposium Lightning Talk"></a></div>
