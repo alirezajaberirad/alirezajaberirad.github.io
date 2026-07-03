@@ -12,6 +12,7 @@ redirect_from:
 I am Alireza Jaberi Rad, a graduate researcher at the University of Massachusetts Amherst working on efficient machine learning and hardware-algorithm co-design. I have developed a novel hyperdimensional computing algorithm and studied its performance across natural language processing, image processing, DNA sequencing, and gene expression classification. I have also contributed to event-based, brain-inspired processing with applications in computer vision, and designed architectures that perform matrix multiplication and convolution in a single step.
 
 Before joining UMass, I earned dual degrees in Computer Science (AI focus) and Electrical Engineering (digital system design focus) at the University of Tehran, where I graduated in the top 10% of both cohorts, won the Best Undergraduate Project Award for my thesis on hardware accelerators for neural networks, and received Exceptional Talent M.Sc. admission offers from the University of Tehran and Sharif University of Technology.
+
 Research Interests: **Efficient AI, Hardware-Software Co-Design, NLP, AI for Science, LLMs & VLMs**
 
 <h2 id="publications" style="margin-bottom: 0.3em;">Publications</h2>
