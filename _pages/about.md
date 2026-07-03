@@ -17,7 +17,7 @@ Research Interests: **Efficient AI, Hardware-Software Co-Design, NLP, AI for Sci
 
 <h2 id="news" style="margin-bottom: 0.3em;">News</h2>
 <ul id="news-list" style="margin-top: 0; padding-left: 1.3em; line-height: 1.4;">
-  <li style="margin-bottom: 0.35em;"><strong>2026:</strong> My co-first authored paper accepted at Nature Communications!</li>
+  <li style="margin-bottom: 0.35em;"><strong>July 2026:</strong> My co-first authored paper accepted at Nature Communications!</li>
 </ul>
 <button id="news-toggle" onclick="var l=document.getElementById('news-list');l.classList.toggle('news-expanded');this.textContent=l.classList.contains('news-expanded')?'Show less':'Show older news';" style="display: none; margin-bottom: 1em; background: none; border: none; color: #4078c0; cursor: pointer; padding: 0; font-size: 0.9em;">Show older news</button>
 <script>
