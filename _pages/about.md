@@ -13,7 +13,7 @@ I am a graduate researcher at the University of Massachusetts Amherst working on
 
 Before joining UMass, I earned dual degrees in Computer Science (AI focus) and Electrical Engineering (digital system design focus) at the University of Tehran, where I graduated in the top 10% of both cohorts, won the Best Undergraduate Project Award for my thesis on hardware accelerators for neural networks, and received Exceptional Talent M.Sc. admission offers from the University of Tehran and Sharif University of Technology.
 
-Research Interests: **Efficient AI, Hardware-Software Co-Design, NLP, AI for Science, LLM**
+Research Interests: **Efficient AI, Hardware-Software Co-Design, NLP, AI for Science, LLMs**
 <h2 id="publications" style="margin-bottom: 0.3em;">Publications</h2>
 {% include base_path %}
 {% if site.publication_category %}{% for category in site.publication_category %}{% assign has_posts = false %}{% for post in site.publications %}{% if post.category == category[0] %}{% assign has_posts = true %}{% endif %}{% endfor %}{% if has_posts %}
