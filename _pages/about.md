@@ -15,24 +15,20 @@ Before joining UMass, I earned dual degrees in Computer Science (AI focus) and E
 
 Research Interests: **Efficient AI, Hardware-Software Co-Design, NLP, AI for Science, LLMs**
 
-<h2 id="links" style="margin-bottom: 0.3em;">Links</h2>
-<ul style="margin-top: 0; padding-left: 0; list-style: none; line-height: 1.6;">
-  <li style="margin-bottom: 0.35em;"><a href="mailto:ajaberirad@umass.edu" style="color:inherit;"><i class="fas fa-fw fa-envelope icon-pad-right" aria-hidden="true"></i>Email</a></li>
-  <li style="margin-bottom: 0.35em;"><a href="https://scholar.google.com/citations?user=KVbWQFYAAAAJ&hl=en" style="color:inherit;"><i class="ai ai-google-scholar-square ai-fw icon-pad-right" aria-hidden="true"></i>Google Scholar</a></li>
-  <li style="margin-bottom: 0.35em;"><a href="https://orcid.org/0009-0002-8701-524X" style="color:inherit;"><i class="ai ai-orcid ai-fw icon-pad-right" aria-hidden="true"></i>ORCID</a></li>
-  <li style="margin-bottom: 0.35em;"><a href="https://www.researchgate.net/profile/Alireza-Jaberi-Rad" style="color:inherit;"><i class="fab fa-fw fa-researchgate icon-pad-right" aria-hidden="true"></i>ResearchGate</a></li>
-  <li style="margin-bottom: 0.35em;"><a href="https://github.com/alirezajaberirad" style="color:inherit;"><i class="fab fa-fw fa-github icon-pad-right" aria-hidden="true"></i>GitHub</a></li>
-  <li style="margin-bottom: 0.35em;"><a href="https://www.linkedin.com/in/alirezajaberirad" style="color:inherit;"><i class="fab fa-fw fa-linkedin icon-pad-right" aria-hidden="true"></i>LinkedIn</a></li>
-</ul>
-
 <style>
 .two-col-list { margin: 0; padding: 0; }
-.two-col-row { display: flex; gap: 1em; margin-bottom: 0.5em; align-items: baseline; }
-.two-col-left { flex: 0 0 190px; max-width: 190px; font-weight: 600; }
+.two-col-row { display: flex; gap: 0.6em; align-items: flex-start; padding: 0.5em 0; border-bottom: 1px solid rgba(128,128,128,0.25); }
+.two-col-list > .two-col-row:first-child { padding-top: 0; }
+.two-col-row:last-child { border-bottom: none; padding-bottom: 0; }
+.two-col-left { flex: 0 0 165px; max-width: 165px; font-weight: 600; }
 .two-col-right { flex: 1; min-width: 0; }
 @media (max-width: 600px) {
-  .two-col-row { flex-direction: column; gap: 0.1em; margin-bottom: 0.8em; }
+  .two-col-row { flex-direction: column; gap: 0.15em; padding: 0.6em 0; }
   .two-col-left { flex: none; max-width: none; }
+}
+.links-mobile-only { display: none; }
+@media screen and (max-width: 1023px) {
+  .links-mobile-only { display: block; }
 }
 </style>
 
@@ -63,9 +59,11 @@ Research Interests: **Efficient AI, Hardware-Software Co-Design, NLP, AI for Sci
 
 <h2 id="publications" style="margin-bottom: 0.3em;">Publications</h2>
 {% include base_path %}
-{% if site.publication_category %}{% for category in site.publication_category %}{% assign has_posts = false %}{% for post in site.publications %}{% if post.category == category[0] %}{% assign has_posts = true %}{% endif %}{% endfor %}{% if has_posts %}
+<!-- post.priority = status_tier*10 + author_rank (1=published, 2=accepted, 3=under review; author_rank 1=first author, 1.5=co-first, 2=second author, ...); sorted ascending so published/first-author work surfaces first -->
+{% assign sorted_pubs = site.publications | sort: 'priority' %}
+{% if site.publication_category %}{% for category in site.publication_category %}{% assign has_posts = false %}{% for post in sorted_pubs %}{% if post.category == category[0] %}{% assign has_posts = true %}{% endif %}{% endfor %}{% if has_posts %}
 <h3 style="margin-top: 0.6em; margin-bottom: 0.2em;">{{ category[1].title }}</h3>
-<div class="two-col-list">{% for post in site.publications reversed %}{% if post.category != category[0] %}{% continue %}{% endif %}
+<div class="two-col-list">{% for post in sorted_pubs %}{% if post.category != category[0] %}{% continue %}{% endif %}
 <div class="two-col-row"><div class="two-col-left">{{ post.venue }}</div><div class="two-col-right">{{ post.authors }}. {% if post.paperurl %}<a href="{{ post.paperurl }}">{{ post.title }}</a>{% else %}{{ post.title }}{% endif %}{% if post.status %} ({{ post.status }}){% endif %}{% if post.year %} ({{ post.year }}){% endif %}.{% if post.arxivurl %} <a href="{{ post.arxivurl }}" style="font-size: 0.85em;">[arXiv]</a>{% endif %}</div></div>{% endfor %}
 </div>{% endif %}{% endfor %}{% endif %}
 <p style="font-size: 0.85em; margin-top: 0.3em; color: #666;">* Co-first author</p>
@@ -103,5 +101,17 @@ function showPres(src, alt) {
   <li style="margin-bottom: 0.35em;">Reviewed 3 manuscripts for <em>IEEE Transactions on Electron Devices</em>.</li>
   <li style="margin-bottom: 0.35em;">Reviewed 2 manuscripts for <em>IEEE International Symposium on Circuits and Systems (ISCAS) 2026</em>.</li>
 </ul>
+
+<div class="links-mobile-only">
+<h2 id="links" style="margin-bottom: 0.3em;">Links</h2>
+<ul style="margin-top: 0; padding-left: 0; list-style: none; line-height: 1.6;">
+  <li style="margin-bottom: 0.35em;"><a href="mailto:ajaberirad@umass.edu" style="color:inherit;"><i class="fas fa-fw fa-envelope icon-pad-right" aria-hidden="true"></i>Email</a></li>
+  <li style="margin-bottom: 0.35em;"><a href="https://scholar.google.com/citations?user=KVbWQFYAAAAJ&hl=en" style="color:inherit;"><i class="ai ai-google-scholar-square ai-fw icon-pad-right" aria-hidden="true"></i>Google Scholar</a></li>
+  <li style="margin-bottom: 0.35em;"><a href="https://orcid.org/0009-0002-8701-524X" style="color:inherit;"><i class="ai ai-orcid ai-fw icon-pad-right" aria-hidden="true"></i>ORCID</a></li>
+  <li style="margin-bottom: 0.35em;"><a href="https://www.researchgate.net/profile/Alireza-Jaberi-Rad" style="color:inherit;"><i class="fab fa-fw fa-researchgate icon-pad-right" aria-hidden="true"></i>ResearchGate</a></li>
+  <li style="margin-bottom: 0.35em;"><a href="https://github.com/alirezajaberirad" style="color:inherit;"><i class="fab fa-fw fa-github icon-pad-right" aria-hidden="true"></i>GitHub</a></li>
+  <li style="margin-bottom: 0.35em;"><a href="https://www.linkedin.com/in/alirezajaberirad" style="color:inherit;"><i class="fab fa-fw fa-linkedin icon-pad-right" aria-hidden="true"></i>LinkedIn</a></li>
+</ul>
+</div>
 
 <p style="margin-top: 1.5em;"><a href="/files/Alireza_Jaberi_Rad_CV.pdf" style="font-weight: 600;">Full CV →</a></p>
