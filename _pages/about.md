@@ -15,15 +15,38 @@ Before joining UMass, I earned dual degrees in Computer Science (AI focus) and E
 
 Research Interests: **Efficient AI, Hardware-Software Co-Design, NLP, AI for Science, LLMs**
 
-<h2 id="news" style="margin-bottom: 0.3em;">News</h2>
-<ul id="news-list" style="margin-top: 0; padding-left: 1.3em; line-height: 1.4;">
-  <li style="margin-bottom: 0.35em;"><strong>July 2026:</strong> My co-first authored paper accepted at Nature Communications!</li>
+<h2 id="links" style="margin-bottom: 0.3em;">Links</h2>
+<ul style="margin-top: 0; padding-left: 0; list-style: none; line-height: 1.6;">
+  <li style="margin-bottom: 0.35em;"><a href="mailto:ajaberirad@umass.edu" style="color:inherit;"><i class="fas fa-fw fa-envelope icon-pad-right" aria-hidden="true"></i>Email</a></li>
+  <li style="margin-bottom: 0.35em;"><a href="https://scholar.google.com/citations?user=KVbWQFYAAAAJ&hl=en" style="color:inherit;"><i class="ai ai-google-scholar-square ai-fw icon-pad-right" aria-hidden="true"></i>Google Scholar</a></li>
+  <li style="margin-bottom: 0.35em;"><a href="https://orcid.org/0009-0002-8701-524X" style="color:inherit;"><i class="ai ai-orcid ai-fw icon-pad-right" aria-hidden="true"></i>ORCID</a></li>
+  <li style="margin-bottom: 0.35em;"><a href="https://www.researchgate.net/profile/Alireza-Jaberi-Rad" style="color:inherit;"><i class="fab fa-fw fa-researchgate icon-pad-right" aria-hidden="true"></i>ResearchGate</a></li>
+  <li style="margin-bottom: 0.35em;"><a href="https://github.com/alirezajaberirad" style="color:inherit;"><i class="fab fa-fw fa-github icon-pad-right" aria-hidden="true"></i>GitHub</a></li>
+  <li style="margin-bottom: 0.35em;"><a href="https://www.linkedin.com/in/alirezajaberirad" style="color:inherit;"><i class="fab fa-fw fa-linkedin icon-pad-right" aria-hidden="true"></i>LinkedIn</a></li>
 </ul>
+
+<style>
+.two-col-list { margin: 0; padding: 0; }
+.two-col-row { display: flex; gap: 1em; margin-bottom: 0.5em; align-items: baseline; }
+.two-col-left { flex: 0 0 190px; max-width: 190px; font-weight: 600; }
+.two-col-right { flex: 1; min-width: 0; }
+@media (max-width: 600px) {
+  .two-col-row { flex-direction: column; gap: 0.1em; margin-bottom: 0.8em; }
+  .two-col-left { flex: none; max-width: none; }
+}
+</style>
+
+<h2 id="news" style="margin-bottom: 0.3em;">News</h2>
+<div id="news-list" class="two-col-list">
+  <div class="two-col-row news-item"><div class="two-col-left">July 2026</div><div class="two-col-right">My co-first authored paper accepted at Nature Communications!</div></div>
+  <div class="two-col-row news-item"><div class="two-col-left">July 2026</div><div class="two-col-right">My first-authored paper accepted at Advanced Intelligent Systems!</div></div>
+  <div class="two-col-row news-item"><div class="two-col-left">July 2026</div><div class="two-col-right">Our Cognitive Radio Receiver paper accepted at Science Advances!</div></div>
+</div>
 <button id="news-toggle" onclick="var l=document.getElementById('news-list');l.classList.toggle('news-expanded');this.textContent=l.classList.contains('news-expanded')?'Show less':'Show older news';" style="display: none; margin-bottom: 1em; background: none; border: none; color: #4078c0; cursor: pointer; padding: 0; font-size: 0.9em;">Show older news</button>
 <script>
 (function() {
   var list = document.getElementById('news-list');
-  var items = list.querySelectorAll('li');
+  var items = list.querySelectorAll('.news-item');
   var btn = document.getElementById('news-toggle');
   if (items.length > 3) {
     for (var i = 3; i < items.length; i++) {
@@ -35,16 +58,16 @@ Research Interests: **Efficient AI, Hardware-Software Co-Design, NLP, AI for Sci
 </script>
 <style>
 #news-list .news-older { display: none; }
-#news-list.news-expanded .news-older { display: list-item; }
+#news-list.news-expanded .news-older { display: flex; }
 </style>
 
 <h2 id="publications" style="margin-bottom: 0.3em;">Publications</h2>
 {% include base_path %}
 {% if site.publication_category %}{% for category in site.publication_category %}{% assign has_posts = false %}{% for post in site.publications %}{% if post.category == category[0] %}{% assign has_posts = true %}{% endif %}{% endfor %}{% if has_posts %}
 <h3 style="margin-top: 0.6em; margin-bottom: 0.2em;">{{ category[1].title }}</h3>
-<ul style="margin-top: 0; padding-left: 1.3em; line-height: 1.4; font-size: 1em;">{% for post in site.publications reversed %}{% if post.category != category[0] %}{% continue %}{% endif %}
-<li style="margin-bottom: 0.35em;">{{ post.authors }}. {% if post.paperurl %}<a href="{{ post.paperurl }}">{{ post.title }}</a>{% else %}{{ post.title }}{% endif %}. <em>{{ post.venue }}</em>{% if post.year %} ({{ post.year }}){% endif %}.{% if post.arxivurl %} <a href="{{ post.arxivurl }}" style="font-size: 0.85em;">[arXiv]</a>{% endif %}</li>{% endfor %}
-</ul>{% endif %}{% endfor %}{% endif %}
+<div class="two-col-list">{% for post in site.publications reversed %}{% if post.category != category[0] %}{% continue %}{% endif %}
+<div class="two-col-row"><div class="two-col-left">{{ post.venue }}</div><div class="two-col-right">{{ post.authors }}. {% if post.paperurl %}<a href="{{ post.paperurl }}">{{ post.title }}</a>{% else %}{{ post.title }}{% endif %}{% if post.status %} ({{ post.status }}){% endif %}{% if post.year %} ({{ post.year }}){% endif %}.{% if post.arxivurl %} <a href="{{ post.arxivurl }}" style="font-size: 0.85em;">[arXiv]</a>{% endif %}</div></div>{% endfor %}
+</div>{% endif %}{% endfor %}{% endif %}
 <p style="font-size: 0.85em; margin-top: 0.3em; color: #666;">* Co-first author</p>
 
 <style>

@@ -1,4 +1,7 @@
 main:
+  - title: "Links"
+    url: /#links
+
   - title: "Publications"
     url: /#publications
 
