@@ -89,12 +89,12 @@ function showPres(src, alt) {
 </script>
 
 <h2 id="presentations" style="margin-bottom: 0.3em;">Presentations</h2>
-<ul style="margin-top: 0; padding-left: 1.3em; line-height: 1.4; font-size: 1em;">
-  <li style="margin-bottom: 0.35em;">Talk, <em>UMass Graduate Research Symposium</em>, UMass Amherst, 2026. <a href="javascript:void(0)" onclick="showPres('/images/2026_UMass_Symposium_Lightning_Talk_0.PNG','2026 UMass Symposium Lightning Talk')" style="color:inherit;">&ldquo;Seeing Like the Eye, Thinking Like the Brain for Faster and Greener AI.&rdquo;</a></li>
-  <li style="margin-bottom: 0.35em;">Poster, <em>ECE Graduate Research Poster Session</em>, UMass Amherst, 2025. <a href="javascript:void(0)" onclick="showPres('/images/2025_Graduate_Research_Poster_Session.jpg','2025 ECE Poster Session')" style="color:inherit;">&ldquo;Hardware–Algorithm Co-Design for Hyperdimensional Computing Based on Memristive System-on-Chip.&rdquo;</a></li>
-  <li style="margin-bottom: 0.35em;">Talk, <em>ECE 3-Minute Thesis Competition</em>, UMass Amherst, 2025. <a href="javascript:void(0)" onclick="showPres('/images/2025_Graduate_Researh_3Minute_Thesis_Talk.PNG','2025 3-Minute Thesis Talk')" style="color:inherit;">&ldquo;A New Era of AI: Efficient Software + Brain-Inspired Hardware.&rdquo;</a></li>
-  <li style="margin-bottom: 0.35em;">Poster, <em>MLNCP Workshop @ NeurIPS</em>, Vancouver, 2024. <a href="javascript:void(0)" onclick="showPres('/images/2024_NeurIPS_Poster.jpg','2024 NeurIPS Poster')" style="color:inherit;">&ldquo;Hardware–Algorithm Co-Design for Hyperdimensional Computing Based on Memristive System-on-Chip.&rdquo;</a></li>
-</ul>
+<div class="two-col-list">
+  <div class="two-col-row"><div class="two-col-left">Talk<br><span style="font-weight: 400;">2026</span></div><div class="two-col-right"><a href="javascript:void(0)" onclick="showPres('/images/2026_UMass_Symposium_Lightning_Talk_0.PNG','2026 UMass Symposium Lightning Talk')" style="color:inherit; font-weight: 500;">Seeing Like the Eye, Thinking Like the Brain for Faster and Greener AI</a><br><span style="font-size: 0.85em; opacity: 0.65;">UMass Graduate Research Symposium</span></div></div>
+  <div class="two-col-row"><div class="two-col-left">Poster<br><span style="font-weight: 400;">2025</span></div><div class="two-col-right"><a href="javascript:void(0)" onclick="showPres('/images/2025_Graduate_Research_Poster_Session.jpg','2025 ECE Poster Session')" style="color:inherit; font-weight: 500;">Hardware–Algorithm Co-Design for Hyperdimensional Computing Based on Memristive System-on-Chip</a><br><span style="font-size: 0.85em; opacity: 0.65;">ECE Graduate Research Poster Session</span></div></div>
+  <div class="two-col-row"><div class="two-col-left">Talk<br><span style="font-weight: 400;">2025</span></div><div class="two-col-right"><a href="javascript:void(0)" onclick="showPres('/images/2025_Graduate_Researh_3Minute_Thesis_Talk.PNG','2025 3-Minute Thesis Talk')" style="color:inherit; font-weight: 500;">A New Era of AI: Efficient Software + Brain-Inspired Hardware</a><br><span style="font-size: 0.85em; opacity: 0.65;">ECE 3-Minute Thesis Competition</span></div></div>
+  <div class="two-col-row"><div class="two-col-left">Poster<br><span style="font-weight: 400;">2024</span></div><div class="two-col-right"><a href="javascript:void(0)" onclick="showPres('/images/2024_NeurIPS_Poster.jpg','2024 NeurIPS Poster')" style="color:inherit; font-weight: 500;">Hardware–Algorithm Co-Design for Hyperdimensional Computing Based on Memristive System-on-Chip</a><br><span style="font-size: 0.85em; opacity: 0.65;">MLNCP Workshop @ NeurIPS, Vancouver</span></div></div>
+</div>
 
 <h2 id="service" style="margin-bottom: 0.3em;">Service</h2>
 <div class="two-col-list">
