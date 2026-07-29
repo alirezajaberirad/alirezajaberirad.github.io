@@ -206,6 +206,13 @@
     }
   }
 
+  // the "Links" nav item duplicates the sidebar's own link icons on desktop, so hide it there
+  a[href$="#links"] {
+    @media screen and (min-width: $sidebar-screen-min-width) {
+      display: none;
+    }
+  }
+
   @media screen and (max-width: #{$sidebar-screen-min-width - 1px}) {
     .visible-links li:not(:first-child) {
       width: 0;
