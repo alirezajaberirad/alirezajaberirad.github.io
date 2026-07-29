@@ -80,9 +80,11 @@ Research Interests: **Efficient AI, Hardware-Software Co-Design, NLP, AI for Sci
 
 <script>
 function showPres(src, alt) {
+  var overlay = document.getElementById('pres-overlay');
+  document.body.appendChild(overlay);
   document.getElementById('pres-img').src = src;
   document.getElementById('pres-img').alt = alt;
-  document.getElementById('pres-overlay').classList.add('active');
+  overlay.classList.add('active');
 }
 </script>
 
