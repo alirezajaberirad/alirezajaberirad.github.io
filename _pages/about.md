@@ -34,6 +34,7 @@ Research Interests: **Efficient AI, Hardware-Software Co-Design, NLP, AI for Sci
 
 <h2 id="news" style="margin-bottom: 0.3em;">News</h2>
 <div id="news-list" class="two-col-list">
+  <div class="two-col-row news-item"><div class="two-col-left">July 2026</div><div class="two-col-right">My co-first authored paper is published now! <a href="https://doi.org/10.1038/s41467-026-76067-5">access here</a></div></div>
   <div class="two-col-row news-item"><div class="two-col-left">July 2026</div><div class="two-col-right">My co-first authored paper accepted at Nature Communications!</div></div>
   <div class="two-col-row news-item"><div class="two-col-left">July 2026</div><div class="two-col-right">My first-authored paper accepted at Advanced Intelligent Systems!</div></div>
   <div class="two-col-row news-item"><div class="two-col-left">July 2026</div><div class="two-col-right">Our Cognitive Radio Receiver paper accepted at Science Advances!</div></div>

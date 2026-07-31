@@ -5,8 +5,8 @@ category: manuscripts
 permalink: /publication/2025-hdc-nature-comms
 date: 2025-01-05
 venue: 'Nature Communications'
-status: 'Accepted'
-priority: 21.5
+priority: 11.5
+paperurl: 'https://doi.org/10.1038/s41467-026-76067-5'
 authors: 'Huang, Y.*, <strong>Jaberi Rad, A.*</strong> et al'
 citation: 'Y. Huang*, <b>A. Jaberi Rad</b>*, et al &quot;Hyperdimensional In-Memory Computing with Analogue Memristive Crossbar Arrays.&quot; <i>Nature Communications</i>. '
 ---
