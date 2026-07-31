@@ -17,7 +17,7 @@ Research Interests: **Efficient AI, Hardware-Software Co-Design, NLP, AI for Sci
 
 <style>
 .two-col-list { margin: 0; padding: 0; }
-.two-col-row { display: flex; gap: 0.6em; align-items: flex-start; padding: 0.5em 0; border-bottom: 1px solid rgba(128,128,128,0.25); }
+.two-col-row { display: flex; gap: 0.6em; align-items: flex-start; padding: 0.5em 0; border-bottom: 1px solid var(--global-border-color); }
 .two-col-list > .two-col-row:first-child { padding-top: 0; }
 .two-col-row:last-child { border-bottom: none; padding-bottom: 0; }
 .two-col-left { flex: 0 0 165px; max-width: 165px; font-weight: 600; }
@@ -32,6 +32,8 @@ Research Interests: **Efficient AI, Hardware-Software Co-Design, NLP, AI for Sci
 }
 .pub-badge { display: inline-block; font-size: 0.75em; line-height: 1.6; padding: 0.05em 0.6em; margin-left: 0.4em; border: 1.5px solid var(--global-border-color); border-radius: 4px; color: var(--global-text-color); text-decoration: none; white-space: nowrap; }
 .pub-badge:hover { color: var(--global-link-color-hover); border-color: var(--global-link-color-hover); }
+.pub-status--accepted { color: var(--global-link-color); font-weight: 600; }
+.pub-status--review { color: var(--global-text-color-light); }
 </style>
 
 <h2 id="news" style="margin-bottom: 0.3em;">News</h2>
@@ -41,7 +43,7 @@ Research Interests: **Efficient AI, Hardware-Software Co-Design, NLP, AI for Sci
   <div class="two-col-row news-item"><div class="two-col-left">July 2026</div><div class="two-col-right">My co-first authored paper accepted at Nature Communications!</div></div>
   <div class="two-col-row news-item"><div class="two-col-left">July 2026</div><div class="two-col-right">Our Cognitive Radio Receiver paper accepted at Science Advances!</div></div>
 </div>
-<button id="news-toggle" onclick="var l=document.getElementById('news-list');l.classList.toggle('news-expanded');this.textContent=l.classList.contains('news-expanded')?'Show less':'Show older news';" style="display: none; margin-bottom: 1em; background: none; border: none; color: #4078c0; cursor: pointer; padding: 0; font-size: 0.9em;">Show older news</button>
+<button id="news-toggle" onclick="var l=document.getElementById('news-list');l.classList.toggle('news-expanded');this.textContent=l.classList.contains('news-expanded')?'Show less':'Show older news';" style="display: none; margin-bottom: 1em; background: none; border: none; color: var(--global-link-color); cursor: pointer; padding: 0; font-size: 0.9em;">Show older news</button>
 <script>
 (function() {
   var list = document.getElementById('news-list');
@@ -65,9 +67,9 @@ Research Interests: **Efficient AI, Hardware-Software Co-Design, NLP, AI for Sci
 <!-- post.priority = status_tier*10 + author_rank (1=published, 2=accepted, 3=under review; author_rank 1=first author, 1.5=co-first, 2=second author, ...); sorted ascending so published/first-author work surfaces first -->
 {% assign sorted_pubs = site.publications | sort: 'priority' %}
 <div class="two-col-list">{% for post in sorted_pubs %}
-<div class="two-col-row"><div class="two-col-left">{{ post.venue }}</div><div class="two-col-right">{{ post.authors }}. {{ post.title }}{% if post.status %} ({{ post.status }}){% endif %}.{% if post.paperurl %} <a href="{{ post.paperurl }}" class="pub-badge">Paper</a>{% endif %}{% if post.arxivurl %} <a href="{{ post.arxivurl }}" class="pub-badge">arXiv</a>{% endif %}</div></div>{% endfor %}
+<div class="two-col-row"><div class="two-col-left">{{ post.venue }}</div><div class="two-col-right">{{ post.authors }}. {{ post.title }}{% if post.status == 'Accepted' %} (<span class="pub-status--accepted">Accepted</span>){% elsif post.status %} (<span class="pub-status--review">{{ post.status }}</span>){% endif %}.{% if post.paperurl %} <a href="{{ post.paperurl }}" class="pub-badge">Paper</a>{% endif %}{% if post.arxivurl %} <a href="{{ post.arxivurl }}" class="pub-badge">arXiv</a>{% endif %}</div></div>{% endfor %}
 </div>
-<p style="font-size: 0.85em; margin-top: 0.3em; color: #666;">* Co-first author</p>
+<p style="font-size: 0.85em; margin-top: 0.3em; color: var(--global-text-color-light);">* Co-first author</p>
 
 <style>
 #pres-overlay { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.85); z-index: 9999; justify-content: center; align-items: center; }
