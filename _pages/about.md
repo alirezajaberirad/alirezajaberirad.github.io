@@ -30,6 +30,8 @@ Research Interests: **Efficient AI, Hardware-Software Co-Design, NLP, AI for Sci
 @media screen and (max-width: 1023px) {
   .links-mobile-only { display: block; }
 }
+.pub-badge { display: inline-block; font-size: 0.75em; font-weight: 600; line-height: 1.6; padding: 0.05em 0.55em; margin-left: 0.4em; border: 1px solid #4078c0; border-radius: 999px; color: #4078c0; text-decoration: none; white-space: nowrap; }
+.pub-badge:hover { background: #4078c0; color: #fff; }
 </style>
 
 <h2 id="news" style="margin-bottom: 0.3em;">News</h2>
@@ -63,7 +65,7 @@ Research Interests: **Efficient AI, Hardware-Software Co-Design, NLP, AI for Sci
 <!-- post.priority = status_tier*10 + author_rank (1=published, 2=accepted, 3=under review; author_rank 1=first author, 1.5=co-first, 2=second author, ...); sorted ascending so published/first-author work surfaces first -->
 {% assign sorted_pubs = site.publications | sort: 'priority' %}
 <div class="two-col-list">{% for post in sorted_pubs %}
-<div class="two-col-row"><div class="two-col-left">{{ post.venue }}</div><div class="two-col-right">{{ post.authors }}. {% if post.paperurl %}<a href="{{ post.paperurl }}">{{ post.title }}</a>{% else %}{{ post.title }}{% endif %}{% if post.status %} ({{ post.status }}){% endif %}{% if post.year %} ({{ post.year }}){% endif %}.{% if post.arxivurl %} <a href="{{ post.arxivurl }}" style="font-size: 0.85em;">[arXiv]</a>{% endif %}</div></div>{% endfor %}
+<div class="two-col-row"><div class="two-col-left">{{ post.venue }}</div><div class="two-col-right">{{ post.authors }}. {{ post.title }}{% if post.status %} ({{ post.status }}){% endif %}{% if post.year %} ({{ post.year }}){% endif %}.{% if post.paperurl %} <a href="{{ post.paperurl }}" class="pub-badge">Paper</a>{% endif %}{% if post.arxivurl %} <a href="{{ post.arxivurl }}" class="pub-badge">arXiv</a>{% endif %}</div></div>{% endfor %}
 </div>
 <p style="font-size: 0.85em; margin-top: 0.3em; color: #666;">* Co-first author</p>
 
