@@ -4,6 +4,7 @@ collection: publications
 category: conferences
 permalink: /publication/2024-hdc-neurips
 date: 2024-12-01
+year: 2024
 venue: 'MLNCP Workshop @ NeurIPS 2024'
 priority: 12
 paperurl: 'https://openreview.net/pdf?id=rRIZblLJHb'
