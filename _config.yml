@@ -186,6 +186,7 @@ exclude:
   - local
   - log
   - node_modules
+  - portfolio-app
   - package.json*
   - Rakefile
   - README

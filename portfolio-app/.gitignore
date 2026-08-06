@@ -1,0 +1,24 @@
+node_modules/
+dist/
+.vite/
+*.log
+*.local
+.DS_Store
+Thumbs.db
+
+# Unused source leftovers kept locally, but not needed for the published site build.
+src/assets/react.svg
+src/assets/vite.svg
+src/assets/hero.png
+src/assets/photos/tt_vid_*.mov
+src/assets/photos/bare_mountain.jpg
+src/assets/photos/chip_pack.jpg
+src/assets/photos/labmate.jpg
+src/assets/photos/nature.jpg
+src/assets/photos/quitted_masters.png
+src/assets/photos/riccio_*.jpg
+src/assets/photos/sugarloaf.jpg
+src/assets/photos/table_tennis_1.jpg
+src/assets/photos/tehran_award.jpg
+public/2024_NeurIPS_Poster.pptx
+public/icons.svg

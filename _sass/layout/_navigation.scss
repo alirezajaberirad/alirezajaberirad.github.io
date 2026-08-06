@@ -189,6 +189,19 @@
     }
   }
 
+  // Portfolio nav link: gradient text using the Portfolio site's own signal colors
+  a.nav-portfolio-gradient {
+    font-weight: 700;
+    background: linear-gradient(90deg, #39d5dc, #6fa65f, #c9952c, #e84d3d);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+
+    &:hover {
+      opacity: 0.75;
+    }
+  }
+
   button {
     position: absolute;
     height: 2.5rem;

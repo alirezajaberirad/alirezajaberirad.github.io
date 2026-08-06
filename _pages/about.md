@@ -42,20 +42,26 @@ Research Interests: **Efficient AI, Hardware-Software Co-Design, NLP, AI for Sci
   <div class="two-col-row news-item"><div class="two-col-left">July 2026</div><div class="two-col-right">My co-first authored paper accepted at Nature Communications!</div></div>
   <div class="two-col-row news-item"><div class="two-col-left">July 2026</div><div class="two-col-right">Our Cognitive Radio Receiver paper accepted at Science Advances!</div></div>
 </div>
-<button id="news-toggle" onclick="var l=document.getElementById('news-list');l.classList.toggle('news-expanded');this.textContent=l.classList.contains('news-expanded')?'Show less':'Show older news';" style="display: none; margin-bottom: 1em; background: none; border: none; color: #4078c0; cursor: pointer; padding: 0; font-size: 0.9em;">Show older news</button>
+
+<div id="news-toggle-wrap">
+  <button id="news-toggle" onclick="var l=document.getElementById('news-list');l.classList.toggle('news-expanded');this.textContent=l.classList.contains('news-expanded')?'Show less':'Show older news';" style="display: none; margin-bottom: 1em; background: none; border: none; color: #4078c0; cursor: pointer; padding: 0; font-size: 0.9em;">Show older news</button>
+</div>
+
 <script>
 (function() {
   var list = document.getElementById('news-list');
   var items = list.querySelectorAll('.news-item');
   var btn = document.getElementById('news-toggle');
-  if (items.length > 3) {
-    for (var i = 3; i < items.length; i++) {
-      items[i].classList.add('news-older');
-    }
+  var older = Array.prototype.slice.call(items, 3);
+  if (older.length) {
+    older.forEach(function(item) {
+      item.classList.add('news-older');
+    });
     btn.style.display = 'inline-block';
   }
 })();
 </script>
+
 <style>
 #news-list .news-older { display: none; }
 #news-list.news-expanded .news-older { display: flex; }

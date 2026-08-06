@@ -13,3 +13,8 @@ main:
 
   - title: "CV"
     url: /files/Alireza_Jaberi_Rad_CV.pdf
+
+  - title: "Portfolio"
+    url: /portfolio/
+    newtab: true
+    class: nav-portfolio-gradient
