@@ -1,0 +1,26 @@
+---
+permalink: /publications.json
+layout: null
+---
+[
+{% assign sorted_pubs = site.publications | sort: 'priority' %}
+{% for post in sorted_pubs %}
+{% assign plain_authors = post.authors | strip_html %}
+{% assign meta = plain_authors | append: ' / ' | append: post.venue %}
+{% if post.status == 'Accepted' %}
+{% assign status_label = 'Accepted' %}
+{% elsif post.status %}
+{% assign status_label = 'Under review' %}
+{% elsif post.category == 'conferences' %}
+{% assign status_label = 'Conference' %}
+{% else %}
+{% assign status_label = 'Journal' %}
+{% endif %}
+{
+"title": {{ post.title | append: '.' | jsonify }},
+"meta": {{ meta | jsonify }},
+"status": {{ status_label | jsonify }}{% if post.paperurl %},
+"href": {{ post.paperurl | jsonify }}{% endif %}
+}{% unless forloop.last %},{% endunless %}
+{% endfor %}
+]
