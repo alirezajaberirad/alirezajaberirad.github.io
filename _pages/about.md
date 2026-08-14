@@ -16,6 +16,7 @@ Before joining UMass, I earned dual degrees in Computer Science (AI focus) and E
 Research Interests: **Efficient AI, Hardware-Software Co-Design, NLP, AI for Science, LLMs**
 
 <style>
+.page__title { display: none; }
 .two-col-list { margin: 0; padding: 0; }
 .two-col-row { display: flex; gap: 0.6em; align-items: flex-start; padding: 0.5em 0; border-bottom: 1px solid rgba(128,128,128,0.25); }
 .two-col-list > .two-col-row:first-child { padding-top: 0; }
