@@ -12,7 +12,7 @@ site_theme               : "default" # The available themes options are "default
 title                    : "Alireza Jaberi Rad"
 title_separator          : "-"
 name                     : &name "Alireza Jaberi Rad"
-description              : &description "Alireza Jaberi Rad's academic portfolio"
+description              : &description "Alireza Jaberi Rad is a PhD researcher at the University of Massachusetts Amherst working on efficient AI, hardware-software co-design, and hyperdimensional computing."
 url                      : https://alirezajaberirad.github.io
 baseurl                  : ""
 repository               : "alirezajaberirad/alirezajaberirad.github.io"
@@ -142,14 +142,19 @@ facebook:
   username               :
   app_id                 :
   publisher              :
-og_image                 :  # Social media default site image
-og_description           :  # Social media default site image description
+og_image                 : "Headshot.png" # Social media default site image
+og_description           : *description # Social media default site image description
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
-  type                   : # Person or Organization (defaults to Person)
-  name                   : # If the user or organization name differs from the site's name
-  links: # An array of links to social media profiles
+  type                   : Person
+  name                   : *name
+  links:
+    - https://scholar.google.com/citations?user=KVbWQFYAAAAJ&hl=en
+    - https://orcid.org/0009-0002-8701-524X
+    - https://www.researchgate.net/profile/Alireza-Jaberi-Rad
+    - https://github.com/alirezajaberirad
+    - https://www.linkedin.com/in/alirezajaberirad
 
 
 # Analytics

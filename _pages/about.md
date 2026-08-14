@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: ""
+title: "PhD Researcher in Efficient AI & Hardware-Software Co-Design"
 author_profile: true
 redirect_from: 
   - /about/
