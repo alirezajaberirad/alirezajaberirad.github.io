@@ -46,7 +46,7 @@ const metrics = [
 
 const VIDEO_PLAYBACK_RATE = 0.7;
 const siteAsset = (path) => `${import.meta.env.BASE_URL}${path.replace(/^\/+/, '')}`;
-const cvHref = siteAsset('Alireza_Jaberi_Rad_CV_May_2026.pdf');
+const cvHref = 'https://alirezajaberirad.github.io/files/Alireza_Jaberi_Rad_CV.pdf';
 const neuripsPosterHref = siteAsset('2024_NeurIPS_Poster.jpg');
 const trainingVideoHref = siteAsset('media/training-rhythm.mov');
 
