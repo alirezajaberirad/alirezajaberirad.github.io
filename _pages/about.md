@@ -37,6 +37,7 @@ Research Interests: **Efficient AI, Hardware-Software Co-Design, NLP, AI for Sci
 
 <h2 id="news" style="margin-bottom: 0.3em;">News</h2>
 <div id="news-list" class="two-col-list">
+  <div class="two-col-row news-item"><div class="two-col-left">August 2026</div><div class="two-col-right">My Advanced Intelligent Systems paper is nominated for the journal’s inside front cover! </div></div>
   <div class="two-col-row news-item"><div class="two-col-left">August 2026</div><div class="two-col-right">My Advanced Intelligent Systems paper is published now! <a href="https://doi.org/10.1002/aisy.70500">access here</a></div></div>
   <div class="two-col-row news-item"><div class="two-col-left">July 2026</div><div class="two-col-right">My Nature Communications paper is published now! <a href="https://doi.org/10.1038/s41467-026-76067-5">access here</a></div></div>
   <div class="two-col-row news-item"><div class="two-col-left">July 2026</div><div class="two-col-right">My first-authored paper accepted at Advanced Intelligent Systems!</div></div>
