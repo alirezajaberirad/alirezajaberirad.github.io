@@ -27,6 +27,7 @@ import hydrodippingImg from './assets/photos/hydrodipping.png';
 import catSketchImg from './assets/photos/cat_sketch.png';
 
 const navItems = [
+  { label: 'Homepage', href: 'https://alirezajaberirad.github.io/' },
   { label: 'Mission', href: '#mission' },
   { label: 'Education', href: '#education' },
   { label: 'Research', href: '#research' },
