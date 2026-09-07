@@ -34,7 +34,7 @@ Research Interests: **Efficient AI, Hardware-Software Co-Design, NLP, AI for Sci
 .pub-badge { display: inline-block; font-size: 0.75em; line-height: 1.6; padding: 0.05em 0.6em; margin-left: 0.4em; border: 1.5px solid var(--global-border-color); border-radius: 4px; color: var(--global-text-color); text-decoration: none; white-space: nowrap; }
 .pub-badge:hover { color: var(--global-link-color-hover); border-color: var(--global-link-color-hover); }
 @media (min-width: 601px) {
-  .pub-badge { display: none; }
+  .pub-link-badge { display: none; }
 }
 .row-tile { cursor: pointer; border-radius: 6px; transition: background-color 0.15s ease; }
 .row-tile:hover, .row-tile:focus-visible { background-color: rgba(128,128,128,0.14); outline: none; }
@@ -81,7 +81,7 @@ Research Interests: **Efficient AI, Hardware-Software Co-Design, NLP, AI for Sci
 {% assign sorted_pubs = site.publications | sort: 'priority' %}
 <div class="two-col-list">{% for post in sorted_pubs %}
 {%- assign primary_url = post.paperurl | default: post.arxivurl -%}
-<div class="two-col-row{% if primary_url %} row-tile{% endif %}"{% if primary_url %} tabindex="0" role="link" aria-label="Read paper: {{ post.title }}" onclick="window.location.href='{{ primary_url }}'" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();window.location.href='{{ primary_url }}';}"{% endif %}><div class="two-col-left">{{ post.venue }}</div><div class="two-col-right">{{ post.authors }}. {{ post.title }}{% if post.status %} ({{ post.status }}){% endif %}.{% if post.paperurl %} <a href="{{ post.paperurl }}" class="pub-badge" onclick="event.stopPropagation()">Paper</a>{% endif %}{% if post.arxivurl %} <a href="{{ post.arxivurl }}" class="pub-badge" onclick="event.stopPropagation()">arXiv</a>{% endif %}</div></div>{% endfor %}
+<div class="two-col-row{% if primary_url %} row-tile{% endif %}"{% if primary_url %} tabindex="0" role="link" aria-label="Read paper: {{ post.title }}" onclick="window.location.href='{{ primary_url }}'" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();window.location.href='{{ primary_url }}';}"{% endif %}><div class="two-col-left">{{ post.venue }}</div><div class="two-col-right">{{ post.authors }}. {{ post.title }}{% if post.status %} ({{ post.status }}){% endif %}.{% if post.paperurl %} <a href="{{ post.paperurl }}" class="pub-badge pub-link-badge" onclick="event.stopPropagation()">Paper</a>{% endif %}{% if post.arxivurl %} <a href="{{ post.arxivurl }}" class="pub-badge pub-link-badge" onclick="event.stopPropagation()">arXiv</a>{% endif %}</div></div>{% endfor %}
 </div>
 <p style="font-size: 0.85em; margin-top: 0.3em; color: #666;">* Co-first author</p>
 
