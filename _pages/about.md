@@ -31,7 +31,7 @@ Research Interests: **Efficient AI, Hardware-Software Co-Design, NLP, AI for Sci
 @media screen and (max-width: 1023px) {
   .links-mobile-only { display: block; }
 }
-.pub-badge { display: inline-block; font-size: 0.75em; line-height: 1.6; padding: 0.05em 0.6em; margin-left: 0.4em; border: 1.5px solid var(--global-border-color); border-radius: 4px; color: var(--global-text-color); text-decoration: none; white-space: nowrap; }
+.pub-badge { display: inline-block; vertical-align: text-bottom; font-size: 0.75em; line-height: 1.6; padding: 0.05em 0.6em; margin-left: 0.4em; border: 1.5px solid var(--global-border-color); border-radius: 4px; color: var(--global-text-color); text-decoration: none; white-space: nowrap; }
 .pub-badge:hover { color: var(--global-text-color); border-color: var(--global-text-color); }
 @media (min-width: 601px) {
   .pub-link-badge { display: none; }
