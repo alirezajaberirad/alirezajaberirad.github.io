@@ -19,7 +19,7 @@ Research Interests: **Efficient AI, Hardware-Software Co-Design, NLP, AI for Sci
 .page__title { display: none; }
 .two-col-list { margin: 0; padding: 0; }
 .two-col-row { display: flex; gap: 0.6em; align-items: flex-start; padding: 0.5em 0.6em; margin: 0 -0.6em; border-bottom: 1px solid rgba(128,128,128,0.25); }
-.two-col-list > .two-col-row:first-child { padding-top: 0; }
+#news-list > .two-col-row:first-child { padding-top: 0; }
 .two-col-row:last-child { border-bottom: none; padding-bottom: 0; }
 .two-col-left { flex: 0 0 165px; max-width: 165px; font-weight: 600; }
 .two-col-right { flex: 1; min-width: 0; }
@@ -37,7 +37,7 @@ Research Interests: **Efficient AI, Hardware-Software Co-Design, NLP, AI for Sci
   .pub-link-badge { display: none; }
 }
 .row-tile { cursor: pointer; border-radius: 6px; background-color: var(--global-bg-color); transition: transform 0.15s ease, box-shadow 0.15s ease; }
-.row-tile:hover, .row-tile:focus-visible { position: relative; z-index: 1; transform: translateY(-0.5px); box-shadow: 0 0 0 1px #000, 0 2px 4px rgba(0,0,0,0.08); outline: none; }
+.row-tile:hover, .row-tile:focus-visible { position: relative; z-index: 1; box-shadow: 0 0 0 1px #000, 0 2px 4px rgba(0,0,0,0.08); outline: none; }
 </style>
 
 <h2 id="news" style="margin-bottom: 0.3em;">News</h2>
