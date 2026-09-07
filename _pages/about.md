@@ -37,7 +37,7 @@ Research Interests: **Efficient AI, Hardware-Software Co-Design, NLP, AI for Sci
   .pub-link-badge { display: none; }
 }
 .row-tile { cursor: pointer; border-radius: 6px; background-color: var(--global-bg-color); transition: transform 0.15s ease, box-shadow 0.15s ease; }
-.row-tile:hover, .row-tile:focus-visible { position: relative; z-index: 1; transform: translateY(-3px); box-shadow: 0 0 0 1px #000, 0 8px 16px rgba(0,0,0,0.2); outline: none; }
+.row-tile:hover, .row-tile:focus-visible { position: relative; z-index: 1; transform: translateY(-1px); box-shadow: 0 0 0 1px #000, 0 3px 6px rgba(0,0,0,0.12); outline: none; }
 </style>
 
 <h2 id="news" style="margin-bottom: 0.3em;">News</h2>
