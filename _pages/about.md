@@ -40,7 +40,7 @@ Research Interests: **Efficient AI, Hardware-Software Co-Design, NLP, AI for Sci
 .row-tile:hover, .row-tile:focus-visible { background-color: rgba(128,128,128,0.14); outline: none; }
 </style>
 
-<h2 id="news" style="margin-bottom: 0.3em;">News</h2>
+<h2 id="news" style="margin-bottom: 0;">News</h2>
 <div id="news-list" class="two-col-list">
   <div class="two-col-row news-item"><div class="two-col-left">September 2026</div><div class="two-col-right">My Nature Communications paper was featured in several news outlets! <a href="https://www.umass.edu/news/article/umass-amherst-engineers-make-edge-ai-more-efficient-redesigning-both-algorithm-and" class="pub-badge">UMass News</a> <a href="https://www.eurekalert.org/news-releases/1140274" class="pub-badge">EurekAlert!</a> <a href="https://techxplore.com/news/2026-08-edge-ai-efficient-redesigning-algorithm.html" class="pub-badge">TechXplore</a> <a href="https://semiengineering.com/research-bits-aug-18/" class="pub-badge">Semiconductor Engineering</a> <a href="https://www.miragenews.com/umass-amherst-revamps-edge-ai-for-greater-1728388/" class="pub-badge">Mirage News</a> <a href="https://www.wamc.org/commentary-opinion/2026-08-27/commentary-when-ai-moves-to-the-edge" class="pub-badge">WAMC (commentary)</a> <a href="https://www.enerzine.com/des-ingenieurs-rendent-lia-embarquee-plus-efficace-en-repensant-lalgorithme-et-le-materiel/193481-2026-09" class="pub-badge">Enerzine (France)</a> <a href="https://ko.com.ua/odnochasne_pereroblennya_algoritmu_ta_aparatnogo_zabezpechennya_zrobilo_periferijnij_ai_efektivnishim_154327" class="pub-badge">ko.com.ua (Ukraine)</a> <a href="https://tiisys.com/blog/2026/08/18/post-200876/" class="pub-badge">TIIS (Japan)</a></div></div>
   <div class="two-col-row news-item"><div class="two-col-left">August 2026</div><div class="two-col-right">My AIS paper is nominated for the journal’s inside front cover! </div></div>
@@ -75,7 +75,7 @@ Research Interests: **Efficient AI, Hardware-Software Co-Design, NLP, AI for Sci
 #news-list.news-expanded .news-older { display: flex; }
 </style>
 
-<h2 id="publications" style="margin-bottom: 0.3em;">Publications</h2>
+<h2 id="publications" style="margin-bottom: 0;">Publications</h2>
 {% include base_path %}
 <!-- post.priority = status_tier*10 + author_rank (1=published, 2=accepted, 3=under review; author_rank 1=first author, 1.5=co-first, 2=second author, ...); sorted ascending so published/first-author work surfaces first -->
 {% assign sorted_pubs = site.publications | sort: 'priority' %}
@@ -107,7 +107,7 @@ function showPres(src, alt) {
 }
 </script>
 
-<h2 id="presentations" style="margin-bottom: 0.3em;">Presentations</h2>
+<h2 id="presentations" style="margin-bottom: 0;">Presentations</h2>
 <div class="two-col-list">
   <div class="two-col-row row-tile" tabindex="0" role="button" aria-label="View poster: Seeing Like the Eye, Thinking Like the Brain for Faster and Greener AI" onclick="showPres('/images/2026_UMass_Symposium_Lightning_Talk_0.PNG','2026 UMass Symposium Lightning Talk')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();showPres('/images/2026_UMass_Symposium_Lightning_Talk_0.PNG','2026 UMass Symposium Lightning Talk')}"><div class="two-col-left">Talk<br><span style="font-weight: 400;">2026</span></div><div class="two-col-right"><span style="font-weight: 500;">Seeing Like the Eye, Thinking Like the Brain for Faster and Greener AI</span><br><span style="font-size: 0.85em; opacity: 0.65;">UMass Graduate Research Symposium</span></div></div>
   <div class="two-col-row row-tile" tabindex="0" role="button" aria-label="View poster: Hardware–Algorithm Co-Design for Hyperdimensional Computing Based on Memristive System-on-Chip" onclick="showPres('/images/2025_Graduate_Research_Poster_Session.jpg','2025 ECE Poster Session')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();showPres('/images/2025_Graduate_Research_Poster_Session.jpg','2025 ECE Poster Session')}"><div class="two-col-left">Poster<br><span style="font-weight: 400;">2025</span></div><div class="two-col-right"><span style="font-weight: 500;">Hardware–Algorithm Co-Design for Hyperdimensional Computing Based on Memristive System-on-Chip</span><br><span style="font-size: 0.85em; opacity: 0.65;">ECE Graduate Research Poster Session</span></div></div>
@@ -115,14 +115,14 @@ function showPres(src, alt) {
   <div class="two-col-row row-tile" tabindex="0" role="button" aria-label="View poster: Hardware–Algorithm Co-Design for Hyperdimensional Computing Based on Memristive System-on-Chip" onclick="showPres('/images/2024_NeurIPS_Poster.jpg','2024 NeurIPS Poster')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();showPres('/images/2024_NeurIPS_Poster.jpg','2024 NeurIPS Poster')}"><div class="two-col-left">Poster<br><span style="font-weight: 400;">2024</span></div><div class="two-col-right"><span style="font-weight: 500;">Hardware–Algorithm Co-Design for Hyperdimensional Computing Based on Memristive System-on-Chip</span><br><span style="font-size: 0.85em; opacity: 0.65;">MLNCP Workshop @ NeurIPS, Vancouver</span></div></div>
 </div>
 
-<h2 id="service" style="margin-bottom: 0.3em;">Service</h2>
+<h2 id="service" style="margin-bottom: 0;">Service</h2>
 <div class="two-col-list">
   <div class="two-col-row"><div class="two-col-left">IEEE TED</div><div class="two-col-right">Reviewed 3 manuscripts.</div></div>
   <div class="two-col-row"><div class="two-col-left">IEEE ISCAS 2026</div><div class="two-col-right">Reviewed 2 manuscripts.</div></div>
 </div>
 
 <div class="links-mobile-only">
-<h2 id="links" style="margin-bottom: 0.3em;">Links</h2>
+<h2 id="links" style="margin-bottom: 0;">Links</h2>
 <ul style="margin-top: 0; padding-left: 0; list-style: none; line-height: 1.6;">
   <li style="margin-bottom: 0.35em;"><a href="mailto:ajaberirad@umass.edu" style="color:inherit;"><i class="fas fa-fw fa-envelope icon-pad-right" aria-hidden="true"></i>Email</a></li>
   <li style="margin-bottom: 0.35em;"><a href="https://scholar.google.com/citations?user=KVbWQFYAAAAJ&hl=en" style="color:inherit;"><i class="ai ai-google-scholar-square ai-fw icon-pad-right" aria-hidden="true"></i>Google Scholar</a></li>
