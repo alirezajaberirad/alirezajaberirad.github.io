@@ -18,13 +18,13 @@ Research Interests: **Efficient AI, Hardware-Software Co-Design, NLP, AI for Sci
 <style>
 .page__title { display: none; }
 .two-col-list { margin: 0; padding: 0; }
-.two-col-row { display: flex; gap: 0.6em; align-items: flex-start; padding: 0.5em 0; border-bottom: 1px solid rgba(128,128,128,0.25); }
+.two-col-row { display: flex; gap: 0.6em; align-items: flex-start; padding: 0.5em 0.6em; margin: 0 -0.6em; border-bottom: 1px solid rgba(128,128,128,0.25); }
 .two-col-list > .two-col-row:first-child { padding-top: 0; }
 .two-col-row:last-child { border-bottom: none; padding-bottom: 0; }
 .two-col-left { flex: 0 0 165px; max-width: 165px; font-weight: 600; }
 .two-col-right { flex: 1; min-width: 0; }
 @media (max-width: 600px) {
-  .two-col-row { flex-direction: column; gap: 0.15em; padding: 0.6em 0; }
+  .two-col-row { flex-direction: column; gap: 0.15em; padding: 0.6em 0.6em; }
   .two-col-left { flex: none; max-width: none; }
 }
 .links-mobile-only { display: none; }
