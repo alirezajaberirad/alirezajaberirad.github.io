@@ -32,12 +32,12 @@ Research Interests: **Efficient AI, Hardware-Software Co-Design, NLP, AI for Sci
   .links-mobile-only { display: block; }
 }
 .pub-badge { display: inline-block; font-size: 0.75em; line-height: 1.6; padding: 0.05em 0.6em; margin-left: 0.4em; border: 1.5px solid var(--global-border-color); border-radius: 4px; color: var(--global-text-color); text-decoration: none; white-space: nowrap; }
-.pub-badge:hover { color: var(--global-link-color-hover); border-color: var(--global-link-color-hover); }
+.pub-badge:hover { color: var(--global-text-color); border-color: var(--global-text-color); }
 @media (min-width: 601px) {
   .pub-link-badge { display: none; }
 }
 .row-tile { cursor: pointer; border-radius: 6px; background-color: var(--global-bg-color); transition: transform 0.15s ease, box-shadow 0.15s ease; }
-.row-tile:hover, .row-tile:focus-visible { position: relative; z-index: 1; transform: translateY(-1px); box-shadow: 0 0 0 1px #000, 0 3px 6px rgba(0,0,0,0.12); outline: none; }
+.row-tile:hover, .row-tile:focus-visible { position: relative; z-index: 1; transform: translateY(-0.5px); box-shadow: 0 0 0 1px #000, 0 2px 4px rgba(0,0,0,0.08); outline: none; }
 </style>
 
 <h2 id="news" style="margin-bottom: 0.3em;">News</h2>
